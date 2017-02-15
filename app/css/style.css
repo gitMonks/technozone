@@ -1,0 +1,14 @@
+.container {
+  background: goldenrod; }
+  .container .row, .container .col-6 {
+    border: 2px solid; }
+    .container .row:hover, .container .col-6:hover {
+      background: pink; }
+
+/* Mainly used for headings */
+.funky {
+  font-family: sans-serif;
+  font-size: 7em;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

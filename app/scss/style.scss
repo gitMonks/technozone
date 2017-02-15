@@ -1,0 +1,20 @@
+$font-size: 2em;
+
+.container {
+	background: goldenrod;
+	.row, .col-6 {
+		border: 2px solid;
+		&:hover {
+			background: pink;
+		}
+	}
+}
+/* Mainly used for headings */
+
+.funky {
+	font: {
+		family: sans-serif;
+		size: $font-size + 5em;
+		weight: bold;
+	}
+}
