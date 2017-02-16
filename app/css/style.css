@@ -1,5 +1,5 @@
 .container {
-  background: goldenrod; }
+  background: rgba(255, 255, 0, 0.9); }
   .container .row, .container .col-6 {
     border: 2px solid; }
     .container .row:hover, .container .col-6:hover {

@@ -1,7 +1,7 @@
 $font-size: 2em;
 
 .container {
-	background: goldenrod;
+	background: rgba(255,255,0,.9)  + rgba(0,255,0,.9);
 	.row, .col-6 {
 		border: 2px solid;
 		&:hover {
