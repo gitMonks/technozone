@@ -46,7 +46,7 @@ html{
  	left: 0;
  	width: 100%;
  	display: none;
-
+	transform-origin: top left;
  	&.is-showing {
  		display: block;
  	}
@@ -115,4 +115,41 @@ label {
 	}
 }
 
+.animate-out {
+	animation: out 500ms ease-in-out forwards;
+}
+.animate-in {
+	animation: in 500ms ease-in-out;
+}
+.animate-up {
+	animation: up 300ms ease-in-out;
+}
 
+@keyframes out {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(1800px);
+	}
+}
+
+@keyframes in {
+	0% {
+		opacity: 0;
+		transform: rotateX(-90deg)
+	}
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes up {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(1800px);
+	}
+}
