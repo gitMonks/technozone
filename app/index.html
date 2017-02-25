@@ -2,26 +2,56 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bootstrap v.4 practice</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	
+	<title>Multi Level Form</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<h1 class="funky">Bootstrap Session 2</h1>
-		<div class="row">
-			<div class="col-6">col 1</div>
-			<div class="col-6">col 2</div>
+	<div class="modal-wrap">
+		<div class="header">
+			<span class="is-active"></span>
+			<span></span>
+			<span></span>	
 		</div>
-		<div class="row">
-			<div class="col">1 of 3</div>
-			<div class="col">2 of 3</div>
-			<div class="col">3 of 3</div>
+		<div class="modal-bodies">
+			<div class="title"></div>
+			<div class="description"></div>
+			<div class="modal is-showing" data-step="1">
+				<div class="title">Step 1</div>
+				<div class="description">Hello, Please fill in the details below</div>
+				<form>
+					<input type="text" placeholder="Name">
+					<input type="email" placeholder="Email">
+				</form>
+				<div class="text-center">
+					<div class="button" data-modal="1">Next</div>
+				</div>
+			</div>
+			<div class="modal" data-step="2">
+				<div class="title">Step 2</div>
+				<div class="description">Would you rather</div>
+				<label>
+					<input type="radio" name="radio">live 10 lives that last 100 years each
+				</label>
+				<label for="">
+					<input type="radio" name="radio">live one life that lasts 1,000 years?
+				</label>
+				<div class="text-center">
+					<div class="button" data-modal="2">Next</div>
+				</div>
+			</div>
+			<div class="modal" data-step="3">
+				<div class="title">Step 3</div>
+				<div class="description">Check your email please</div>
+				<div class="text-center">
+					<div class="button" data-modal="3">Done</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="button">ReRun</div>
+			</div>
 		</div>
 	</div>
+
 	<script src="js/app.js"></script>
 </body>
 </html>

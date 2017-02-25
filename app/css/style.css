@@ -1,14 +1,99 @@
-.container {
-  background: rgba(255, 255, 0, 0.9); }
-  .container .row, .container .col-6 {
-    border: 2px solid; }
-    .container .row:hover, .container .col-6:hover {
-      background: pink; }
+* {
+  box-sizing: border-box; }
 
-/* Mainly used for headings */
-.funky {
-  font-family: sans-serif;
-  font-size: 7em;
-  font-weight: bold; }
+html {
+  background: -webkit-radial-gradient(#fff176, #f57f17);
+  background: radial-gradient(#fff176, #f57f17);
+  min-height: 100%;
+  font-family: Helvetica, sans-serif; }
+
+.modal-wrap {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.header {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 50px;
+  border-bottom: 1px solid #ddd;
+  text-align: center; }
+  .header span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #ddd;
+    border-radius: 50%; }
+    .header span.is-active {
+      background-color: #FF8F00; }
+
+.modal-bodies {
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+.modal {
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 30px 50px;
+  box-shadow: 0 50px 30px -30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none; }
+  .modal.is-showing {
+    display: block; }
+  .modal .title {
+    display: block;
+    color: #FF6F00;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .modal .description {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px; }
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%; }
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #FF6F00; }
+
+label {
+  display: block;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer; }
+  label > input {
+    margin-right: 20px; }
+
+.text-center {
+  text-align: center;
+  padding-top: 20px; }
+  .text-center .button {
+    background-color: #FF6F00;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    width: 100px; }
 
 /*# sourceMappingURL=style.css.map */
