@@ -1,20 +1,118 @@
-$font-size: 2em;
+* {
+	box-sizing: border-box;
+}
+html{
+	background: radial-gradient(#fff176, #f57f17);
+	min-height: 100%;
+	font-family: Helvetica, sans-serif;
+}
 
-.container {
-	background: rgba(255,255,0,.9)  + rgba(0,255,0,.9);
-	.row, .col-6 {
-		border: 2px solid;
-		&:hover {
-			background: goldenrod;
+.modal-wrap {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 20px;
+	background-color: #fff;
+	margin-top: 50px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	
+	span {
+		display: inline-block;
+		height: 12px;
+		width: 12px;
+		background-color: #ddd;
+		border-radius: 50%;
+
+		&.is-active {
+			background-color: #FF8F00
 		}
 	}
 }
-/* Mainly used for headings */
 
-.funky {
-	font: {
-		family: sans-serif;
-		size: $font-size + 5em;
-		weight: bold;
+.modal-bodies {
+	perspective: 1000px;
+}
+.modal {
+	background-color: #fff;
+	margin-bottom: 50px;
+	padding: 30px 50px;
+ 	box-shadow: 0 50px 30px -30px rgba(0,0,0,.3);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	display: none;
+
+ 	&.is-showing {
+ 		display: block;
+ 	}
+ 
+	.title {
+		display: block;
+		color: #FF6F00;
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	.description {
+		color: #666;
+		font-size: 16px;
+		letter-spacing: 1px;
+		text-align: center;
+		margin-bottom: 30px;
 	}
 }
+
+input[type="text"], 
+input[type="email"] {
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 20px;
+	outline: none;
+	width: 100%;
+
+	&:focus {
+		border-color: #FF6F00;
+	}
+}
+
+label {
+	display: block;
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	font-size: 18px;
+	color: #666;
+	cursor: pointer;
+	
+	& > input {
+		margin-right: 20px;
+	}
+}
+.text-center {
+	text-align: center;
+	padding-top: 20px;
+
+	.button {
+		background-color: #FF6F00;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		text-transform: uppercase;
+		width: 100px;
+	}
+}
+
+
